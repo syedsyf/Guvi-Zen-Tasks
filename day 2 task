@@ -1,0 +1,24 @@
+Differences between HTTP v1.1 vs HTTP v2
+
+HTTP2 is a binary protocol and HTTP V1.1 is a Textual.
+HTTP2 is fully multiplexed and HTTP V1.1 is ordered and blocked.
+HTTP2 can use one TCP connection for parallelism and HTTP V1.1 requires multiple TCP connections.
+HTTP2 uses header compression to reduce overhead, Not is available in HTTP V 1.1
+HTTP2 allows servers to “push” responses proactively into client caches that are not available in HTTP V1.1
+Objects  and their internal representation
+
+Objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+
+We can define object with curly bracket {}
+For example :
+var car = {};
+
+We can assign keys and values using two methods.
+
+Using dot:             car.color  = “red”;
+ Using square bracket :  car[“color”] = “red”;
+
+Where color is key and red is the value.
+
+The value is unsigned key is undefined;
