@@ -1,0 +1,42 @@
+{
+    "personalInfo":{
+      "firstName":"syed",
+      "secondName":"saifu",
+      "age":25,
+      "contactDeatils":{
+       "phone":9731635031,
+       "mail":"syedsaifu3@gmail.com"
+      }
+    },
+     "educationalInfo":{
+       "degree":{"collage":"dayananda Sagar Collage of Engneering",
+               passedOut:2018,
+               cgpa:5.8
+               },
+       "diploma":{"collage":"Govt polytechnic kushalnagar ",
+               "passedOut":2015,
+               "cgpa":7.8
+               },
+       "school":{"collage":"Pushpa english medium school",
+               "passedOut":2012,
+               "cgpa":8.0
+               }
+   },
+   "workExperiance":{
+    "1":{
+      "company":"fourthdimension Technologies",
+      "designation":"customer support engineer",
+      "yearsOfexperiance":2,
+      "currentlyWorking":"Yes"
+    },
+    "2":{
+      "company":"Prathap Technocarts",
+      "designation":"NOC engineer",
+      "yearsOfexperiance":1,
+      "currentlyWorking":"No"
+    }
+    },
+    "language":["kannada","English","Hindi"],
+    "hobbies":["hiking","long drives","volly Ball"]
+   }
+    
