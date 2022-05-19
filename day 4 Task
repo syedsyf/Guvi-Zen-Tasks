@@ -1,0 +1,63 @@
+
+//console loging all contries flag
+
+const getFlag = url => {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       let data = JSON.parse(this.responseText);
+       for(i in data){
+       console.log(data[i].flag)
+       }
+    }
+};
+xhttp.open("GET",url);
+xhttp.send();
+}
+
+getFlag("https://restcountries.com/v2/all")
+
+
+//console loging all countries name, region, sub region and population
+const getData = url => {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       let data = JSON.parse(this.responseText);
+       console.log(data);
+       for(i in data){
+           console.log(`Name:${data[i].name},population:${data[i].population},Region:${data[i].region},Subregion:${data[i].subregion}`)
+       }
+    }
+};
+xhttp.open("GET",url);
+xhttp.send();
+}
+
+getData("https://restcountries.com/v2/all");
+
+// comapre Two Objects
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+
+var flag=true;
+
+if(Object.keys(obj1).length==Object.keys(obj2).length){
+    for(key in obj1) { 
+        if(obj1[key] == obj2[key]) {
+            continue;
+        }
+        else {
+            flag=false;
+            break;
+        }
+    }
+}
+else {
+    flag=false;
+}
+if(flag){
+  console.log("Equal")
+}else{;
+    console.log("Not Equal")
+}
