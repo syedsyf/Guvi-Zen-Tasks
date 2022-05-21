@@ -1,0 +1,353 @@
+// //Print odd numbers in an array 
+
+//     //Anonymous Function.
+
+
+// let nums = [1,2,3,4,5,6,7,8,9]; 
+// let getOdd = function (arr){
+//     let res =[];
+//     for(i=0;i<nums.length;i++){
+//         if(nums[i]%2){
+//             res.push(nums[i]);
+//         }
+//     }
+//     return res;
+// }
+// console.log(getOdd(nums));
+
+// //IIFF
+
+
+    // (function(){
+    // let res =[];
+    // for(i=0;i<nums.length;i++){
+    //     if(nums[i]%2){
+    //         res.push(nums[i]);
+    //     }
+    // }
+    // console.log(res);
+    // })(nums);
+
+// //Arrow Function;
+// let nums = [1,2,3,4,5,6,7,8,9]; 
+// let getOdd = arr =>{
+//     let res =[];
+//     for(i=0;i<nums.length;i++){
+//         if(nums[i]%2){
+//             res.push(nums[i]);
+//         }
+//     }
+//     return res;
+// }
+// console.log(getOdd(nums));
+
+////---------------------------------------------------------------------------------------------------------------------------------
+// // Convert all the strings to title caps in a string array
+
+
+// //Anonymous Function.
+
+
+// let str ="syed saifu guvi zen"
+// let toTitle = function(str){
+//     let arr = str.split(" ");
+//     let res = arr.map(ele=>{
+//         return ele.charAt(0).toUpperCase() + ele.slice(1);
+//     })
+//     return res.join(" ");
+//     }
+// console.log(toTitle(str));
+
+
+// //IIF
+
+
+// (function(){
+//     let arr = str.split(" ");
+//     let res = arr.map(ele=>{
+//         return ele.charAt(0).toUpperCase() + ele.slice(1);
+//     });
+//     console.log(res.join(" "));
+//     })(str);
+
+
+//// Arrow Function
+
+
+// let str ="syed saifu guvi zen"
+// let toTitle = str => {
+//     let arr = str.split(" ");
+//     let res = arr.map(ele=>{
+//         return ele.charAt(0).toUpperCase() + ele.slice(1);
+//     })
+//     return res.join(" ");
+//     }
+// console.log(toTitle(str));
+
+////--------------------------------------------------------------------------------------------------------------------------------------
+
+// //Sum of all numbers in an array
+
+
+// //Anonymous Function.
+// let arr =[1,2,3,4,5,6,7,8,9];
+// let sum = function(arr){
+//     let res = 0;
+//     for(i=0;i<arr.length;i++){
+//         res += arr[i]
+//     }
+//     return res;
+// }
+// console.log(sum(arr));
+
+
+// //IIF
+
+
+// (function(){
+//     let res = 0;
+//     for(i=0;i<arr.length;i++){
+//         res += arr[i]
+//     }
+//     console.log(res);
+// })(arr);
+
+
+// //Arrow function
+
+
+// let arr =[1,2,3,4,5,6,7,8,9];
+// let sum = arr => {
+//     let res = 0;
+//     for(i=0;i<arr.length;i++){
+//         res += arr[i]
+//     }
+//     return res;
+// }
+// console.log(sum(arr));
+
+////---------------------------------------------------------------------------------------------------------------------------
+
+// //Return all the prime numbers in an array
+
+//Anonymous Function.
+
+
+
+// let arr =[2,3,4,5,6,7,8,9]
+// let getPrime = function(arr){
+//     function isPrime(ele){
+//         for(let i=2;i<ele;i++){
+//             if( ele%i == 0 ){
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+// let res = arr.filter((ele) => isPrime(ele) );
+// return res;
+// }
+// console.log(getPrime(arr));
+
+
+
+// //IIFE
+
+
+
+// (function(){
+//     function isPrime(ele){
+//         for(let i=2;i<ele;i++){
+//             if( ele%i == 0 ){
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+// let res = arr.filter((ele) => isPrime(ele) );
+// console.log(res);
+// })(arr);
+
+
+// //Arrow Function
+
+
+// let arr =[2,3,4,5,6,7,8,9]
+// let getPrime = arr => {
+//     function isPrime(ele){
+//         for(let i=2;i<ele;i++){
+//             if( ele%i == 0 ){
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+// let res = arr.filter((ele) => isPrime(ele) );
+// return res;
+// }
+// console.log(getPrime(arr));
+////---------------------------------------------------------------------------------------------------------------------
+
+// //Return all the palindromes in an array
+
+
+
+// //Anonymous Function.
+
+
+// let arr =["syed","saifu","mllm","qwewq","qwertytrewq"];
+// let getPalin = function(arr){
+//     function reversStr(ele){
+//         let splitStr = ele.split("");
+//         let rev= splitStr.reverse().join("");
+//         return rev
+//     }
+//     let res = arr.filter(ele => {
+//         if (ele == reversStr(ele)){
+//             return true
+//         }
+//         return false;
+//     })
+//     return res
+// }
+// let z =getPalin(arr);
+// console.log(z)
+
+
+// //IIFE
+
+
+
+// (function(){
+//     function reversStr(ele){
+//         let splitStr = ele.split("");
+//         let rev= splitStr.reverse().join("");
+//         return rev
+//     }
+//     let res = arr.filter(ele => {
+//         if (ele == reversStr(ele)){
+//             return true
+//         }
+//         return false;
+//     })
+//     console.log(res)
+// })(arr);
+
+
+
+// //Arrow Function
+
+
+
+// let arr =["syed","saifu","mllm","qwewq","qwertytrewq"];
+// let getPalin = function(arr){
+//     function reversStr(ele){
+//         let splitStr = ele.split("");
+//         let rev= splitStr.reverse().join("");
+//         return rev
+//     }
+//     let res = arr.filter(ele => {
+//         if (ele == reversStr(ele)){
+//             return true
+//         }
+//         return false;
+//     })
+//     return res
+// }
+// let z =getPalin(arr);
+// console.log(z)
+////------------------------------------------------------------------------------------------------------------------
+
+////Return median of two sorted arrays of the same size
+
+
+////Anonymous Function.
+
+
+// let arr1 = [1, 2, 3, 6, 7];
+// let arr2 = [4, 6, 8, 10, 11];
+// let med = function(arr1,arr2){
+//     let arr = arr1.concat(arr2).sort(function(a,b){return a-b});
+//     console.log(arr)
+//     if(arr.length % 2 == 0){
+//         index = Math.round(arr.length/2)
+//         return (arr[index]+arr[index-1])/2;
+//     }else{
+//         index = Math.round(arr.length/2)
+//         return arr[index-1];
+        
+//     }
+// }
+// console.log(med(arr1,arr2));
+
+
+////IIFE
+
+// let arr1 = [1, 2, 3, 6, 7];
+// let arr2 = [4, 6, 8, 10, 11];
+// (function(){
+//     let arr = arr1.concat(arr2).sort(function(a,b){return a-b});
+//     console.log(arr)
+//     if(arr.length % 2 == 0){
+//         index = Math.round(arr.length/2)
+//         console.log((arr[index]+arr[index-1])/2);
+//     }else{
+//         index = Math.round(arr.length/2)
+//         console.log(arr[index-1]);
+        
+//     }
+// })(arr1,arr2);
+
+////-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+////Remove duplicates from an array
+
+////Anonymous Function.
+
+// let arr = [1,2,3,4,3,5,6,1,7,2];
+// let removeDuplicate = function(arr){
+//     let res =[];
+//     for(i=0;i<arr.length;i++){
+//         if(!res.includes(arr[i])){
+//             res.push(arr[i]);
+//         }
+//     }
+//     console.log(res);
+//     return res;
+// }
+// removeDuplicate(arr);
+
+//IIFE
+
+// let arr = [1,2,3,4,3,5,6,1,7,2];
+// (function(){
+//     let res =[];
+//     for(i=0;i<arr.length;i++){
+//         if(!res.includes(arr[i])){
+//             res.push(arr[i]);
+//         }
+//     }
+//     console.log(res);
+//     return res;
+// })(arr);
+
+////----------------------------------------------------------------------------------------------------------------------------------------
+
+////Rotate an array by k times
+
+////Anonymous Function.
+
+// const arr =[1,2,3,4,5,6,7,8,9];
+// let rotate = function(arr,x){
+//     let ele = arr.splice(x);
+//     return (ele.concat(arr))
+// }
+// console.log(rotate(arr,1))
+
+//IIFE
+
+// const arr =[1,2,3,4,5,6,7,8,9];
+// let rotate = (function(){
+//     let ele = arr.splice(x);
+//     console.log(ele.concat(arr))
+// })(arr,x=3);
