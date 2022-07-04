@@ -1,0 +1,23 @@
+.card-heading{
+    color: white;
+    text-align: Center;
+    font-size: large;
+    font-weight: 500;
+    margin: auto;
+}
+
+.card-bg{
+    background-image:  linear-gradient(to right, #DECBA4, #3E5151);;
+}
+.img{
+    width: 100%;
+}
+.card-text{
+    color: white;
+    font-size: large;
+}
+
+.bttn{
+    border: black 2px solid;
+}
+
