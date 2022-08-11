@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encryp and Decrypt</title>
+  </head>
+  <body>
+    <div class="navbar mb-3">
+      <h1 class="heading mx-auto">Encrypt and Decrypt</h1>
+    </div>
+    <div class="container">
+      <h3>Input:</h3>
+      <textarea
+        name=""
+        id="input"
+        class="txt-area"
+        placeholder="Enter your text message here"
+      ></textarea>
+      <label for="secret" class="form-label">Secret Key:</label>
+      
+    <input type="text" class="form-control" id="secret" placeholder="Enter The Secret key here">
+    </div>
+    <div>
+      <div class="container text-center my-2">
+        <label for="">Method:</label>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="inlineCheckbox1"
+            name="type"
+            value="encrypt"
+            checked
+          />
+          <label class="form-check-label" for="inlineCheckbox1">Encrypt</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="inlineCheckbox2"
+            name="type"
+            value="decrypt"
+          />
+          <label class="form-check-label" for="inlineCheckbox2">Decrypt</label>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary btn-xl" onclick="encryptData()">Convert</button>
+      </div>
+      <div>
+        <h3 class="text-center my-3">Output:</h3>
+        <p id="result" class="text-center"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
