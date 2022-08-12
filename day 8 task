@@ -1,0 +1,113 @@
+// 1:
+class Movie {
+  constructor(title, studio, rating = "PG") {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+
+  getPG(movieArray) {
+    return movieArray.filter((movie) => {
+      return movie.rating == "PG";
+    });
+  }
+}
+let casinoRoyale = new Movie("Casino Royale", "Eon Prodiction", "PG13");
+let captianAmerica = new Movie("captian America", "fox");
+let thor = new Movie("Thos", "fox");
+
+let arr = [captianAmerica, thor, casinoRoyale];
+
+console.log(casinoRoyale.getPG(arr));
+//=================================================================================================================
+// 2:
+class Circel{
+    constructor(radius= 1.0,color="red") {
+        this.radius = radius;
+        this.color = color;
+    }
+
+    getRadius(){
+        return this.radius;
+    }
+    setRadius(radius){
+        this.radius = radius;
+    }
+
+    getColor(){
+        return this.color;
+    }
+
+    setColor(color){
+        this.color = color;
+    }
+
+    toString(){
+        return `Circel[radius=${this.radius},color=${this.color}]`
+    }
+
+    getArea(){
+        return Math.PI * this.radius * this.radius
+    }
+
+    gerCircumference(){
+        return 2* Math.PI * this.radius;
+    }
+
+    
+}
+//================================================================================================================
+
+// 3:
+class Person{
+    constructor(fname,lname,age,address,contact){
+        this.fname = fname;
+        this.lname = lname;
+        this.age = age;
+        this.address = address;
+        this.contact =contact;
+    }
+
+    getFullName(){
+        return this.fname+" "+this.lname;
+    }
+
+    getAge(){
+        return this.age;
+    }
+
+    getAddress(){
+        return this.address;
+    }
+
+    getcontact(){
+        return `Phone: ${this.contact[0]}, Mail: ${this.contact[1]}`
+    }
+    getPhoneNumber(){
+        return this.contact[0];
+    }
+
+    getMailAddress(){
+        return this.contact[1];
+    }
+}
+let syed = new Person("syed","saifu",25,"Mysore",[9731635031,"syedsaifu3@gmail.com"]);
+
+////================================================================================================================
+
+// 4:
+//every Min in uber charges 1rs and every KM is 12 rs
+class Uber{
+    constructor(distance,time){
+        this.distance = distance;
+        this.time = time;
+    }
+
+    getFare(){
+        let timeFare = this.time;
+        let distanceFare = this.distance*12;
+        return +distanceFare + +timeFare
+    }
+}
+let newRide = new Uber(12,20)
+console.log(newRide.getFare())
